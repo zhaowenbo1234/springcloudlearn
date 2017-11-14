@@ -8,9 +8,17 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
+  rabbitmq:
+    host: localhost
+    port: 5672
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8889/eureka/
 server:
   port: 8881
+
+management:
+  security:
+    enabled: false
